@@ -1,4 +1,11 @@
-spring.h2.console.enabled=true
-spring.datasource.url=jdbc:h2:mem:testdb
-
-logging.level.guru.springframework=debug
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sfg_prod
+    username: sfg_prod_username
+    password: Guru123456789!
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: mysql
+    show-sql: false
